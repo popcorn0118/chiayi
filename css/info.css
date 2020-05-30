@@ -1,0 +1,83 @@
+body {
+  background: url(../image/info_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main_info {
+  width: 900px;
+  height: 80vh;
+  max-width: 90%;
+  background: url(../image/popups_bg.jpg) repeat center center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.main_info .q1 {
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.main_info .q1 img {
+  width: 100%;
+}
+
+.main_info ul {
+  text-align: center;
+  line-height: 3em;
+  font-size: 40px;
+  padding: 5%;
+  height: 72%;
+  display: block;
+  font-weight: bolder;
+  overflow-y: auto;
+}
+
+.main_info ul li {
+  height: calc(100% / 5);
+}
+
+.main_info ul li span {
+  background: url(../image/info_line.png) no-repeat center bottom;
+  padding-bottom: 10px;
+}
+
+.main_info ul li input {
+  width: 50%;
+  background: transparent;
+  border: 0px;
+  height: 55px;
+  font-size: 45px;
+  font-weight: bolder;
+  color: #67503c;
+}
+
+@media screen and (max-width: 960px) {
+  .main_info .q1 {
+    width: 100px;
+    bottom: 0px;
+    right: 0px;
+  }
+  .main_info ul {
+    line-height: 2em;
+    font-size: 20px;
+    height: 67%;
+    padding: 20px 0;
+  }
+  .main_info ul li input {
+    height: 35px;
+    font-size: 25px;
+  }
+  .main_info .btnWa {
+    margin: 10px auto 0;
+  }
+}
+/*# sourceMappingURL=info.css.map */

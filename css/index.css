@@ -1,0 +1,74 @@
+body {
+  background: url(../image/bg_home.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main_home {
+  width: 100%;
+  height: 100%;
+}
+
+.main_home svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -46%);
+          transform: translate(-50%, -46%);
+  max-height: 110%;
+}
+
+.main_home svg g {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.main_home svg #home_4, .main_home svg #home_6, .main_home svg #home_8, .main_home svg #home_10 {
+  -webkit-animation-name: animation_a1;
+          animation-name: animation_a1;
+}
+
+.main_home svg #home_5, .main_home svg #home_7, .main_home svg #home_9 {
+  -webkit-animation-name: animation_a2;
+          animation-name: animation_a2;
+}
+
+.main_home svg #home_12 {
+  -webkit-transform: translate(-19px, -9px);
+          transform: translate(-19px, -9px);
+}
+
+.main_home svg #home_12 .h1 {
+  -webkit-transform: translate(516.48px, 577.92px) scale(0.24);
+          transform: translate(516.48px, 577.92px) scale(0.24);
+}
+
+.main_home svg #home_12 .h2 {
+  -webkit-transform: translate(508.32px, 573.36px) scale(0.24);
+          transform: translate(508.32px, 573.36px) scale(0.24);
+}
+
+.main_home svg #home_12:hover .h2 {
+  -webkit-transform: translate(513.48px, 574.92px) scale(0.24);
+          transform: translate(513.48px, 574.92px) scale(0.24);
+}
+
+.main_home svg #home_14 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation-name: animation_c2;
+          animation-name: animation_c2;
+}
+
+.main_home svg #home_15 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation-name: animation_c1;
+          animation-name: animation_c1;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+/*# sourceMappingURL=index.css.map */

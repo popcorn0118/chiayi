@@ -1,0 +1,187 @@
+body {
+    width: 100vw;
+    height: 80%;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+body, input, button {
+    font-family: Microsoft JhengHei;
+    outline:none;
+}
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    &::before {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+@keyframes animation_a1{
+    0% {transform: translateY(5px);}
+    50% {transform: translateY(0px);}
+    100% {transform: translateY(5px);}
+}
+@keyframes animation_a2{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(5px);}
+    100% {transform: translateY(0px);}
+}
+// @keyframes animation_b1{
+//     0% {transform: scale(0.9);}
+//     50% {transform: scale(1);}
+//     100% {transform: scale(0.9);}
+// }
+// @keyframes animation_b2{
+//     0% {transform: scale(1);}
+//     50% {transform: scale(0.9);}
+//     100% {transform: scale(1);}
+// }
+@keyframes animation_c1{
+    0% {transform: scale(0.9);}
+    50% {transform: scale(1);}
+    75% {
+        transform: scale(1) translateY(15px);
+    }
+    85% {
+        transform: scale(1) translateY(0px);
+    }
+    100% {transform: scale(1) translateY(15px);}
+}
+@keyframes animation_c2{
+    0% {transform: translateY(5px);}
+    50% {transform: translateY(0);}
+    100% {transform: translateY(5px);}
+}
+.btnWa {
+    margin: 0 auto;
+    width: 200px;
+    .button {
+        font-size: 40px;
+        width: 100%;
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        font-weight: bold;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s all;
+        &:hover {
+            transition: 0.4s all;
+            cursor: pointer;
+        }
+    }
+    &.bul .button {
+        background-color: #8BD0E3;
+        box-shadow: 0 0 0px 7px #8BD0E3;
+        &:hover {
+            background-color: #60a8bc;
+            box-shadow: 0 0 0px 7px #60a8bc;
+        }
+    }
+    &.tif .button {
+        color: #ffffff;
+        background-color: #6FC4B7;
+        box-shadow: 0 0 0px 7px #6FC4B7;
+        &:hover {
+            background-color: #56a095;
+            box-shadow: 0 0 0px 7px #56a095;
+        }
+    }
+    &.orange .button {
+        color: #000000;
+        background-color: #F6C162;
+        box-shadow: 0 0 0px 7px #F6C162;
+        &.active, &:disabled.active:hover {
+            background-color: #E75948;
+            box-shadow: 0 0 0px 7px #E75948;
+        }
+        &:disabled:hover {
+            background-color: #F6C162;
+            box-shadow: 0 0 0px 7px #F6C162;
+        }
+    }
+    &[class*="line_"] .button {
+        border: 0px;
+        border-radius: 0px;
+        padding: 10px;
+    }
+    &.line_green .button {
+        color: #138C43;
+        background: url(../image/correct_border.png) no-repeat center;
+        background-size: 100% 100%; 
+        &:hover {
+            color: #138C43;
+            background-color: rgba(19, 140, 67, 0.3);
+        }
+    }
+    &.line_red .button {
+        color: #c1172b;
+        background: url(../image/error_border.png) no-repeat center;
+        background-size: 100% 100%; 
+        &:hover {
+            color: #c1172b;
+            background-color: rgba(193, 23, 43, 0.3);
+        }
+    }
+}
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    span {
+        border-radius: 10px;
+        color: #ffffff;
+        width: 53px;
+        height: 53px;
+        display: inline-block;
+        text-align: center;
+        line-height: 47px;
+        margin: 0 -3px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        &:nth-of-type(1) {background: #1298A4;}
+        &:nth-of-type(2) {background: #182A86;}
+        &:nth-of-type(3) {background: #9D298A;}
+        &:nth-of-type(4) {background: #38AA37;}
+        &:nth-of-type(5) {background: #BB5B1E;}
+        &:nth-of-type(6) {background: #951E30;}
+        &:nth-of-type(7) {background: #619BD3;}
+        &:nth-of-type(8) {background: #DA820E;}
+        &:nth-of-type(9) {background: #56B553;}
+        &:nth-of-type(10) {background: #19479C;}
+        &:nth-of-type(11) {background: #7D348F;}
+        &:nth-of-type(12) {background: #F5AE25;}
+    }
+}
+@media screen and (max-width:960px) {
+    .btnWa {
+        .button {
+            font-size: 21px;
+            padding: 2px;
+            transform: translate(-50%, -50%) scale(0.9);
+        }
+    }
+    .title {
+        font-size: 20px;
+        padding: 5px;
+        font-size: 30px;
+        span {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
