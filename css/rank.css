@@ -1,6 +1,5 @@
 body {
-  background: url(../image/info_bg.jpg) no-repeat center center;
-  background-size: cover;
+  background-image: url(../image/info_bg.jpg);
 }
 
 .main_rank {
@@ -45,6 +44,7 @@ body {
   height: 60%;
   display: block;
   font-weight: bolder;
+  overflow: hidden;
 }
 
 .main_rank ul li {
@@ -126,21 +126,36 @@ body {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 979px) {
+  .main_rank {
+    height: auto;
+    min-height: 95%;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    margin: 5%;
+  }
+  .main_rank .title {
+    padding: 30px 10px;
+  }
+  .main_rank .title span {
+    top: 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
   .main_rank .q1 {
     width: 100px;
     height: 100px;
     left: 0;
-    top: 0;
+    top: 50px;
   }
   .main_rank ul {
     line-height: 2em;
     font-size: 20px;
-    height: 47%;
+    height: auto;
     margin-bottom: 16px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 10px 0 20px;
+    padding: 60px 0 0;
   }
   .main_rank ul li {
     height: auto;
@@ -148,12 +163,16 @@ body {
     margin-bottom: 19px;
   }
   .main_rank ul li:nth-of-type(-n+3) {
-    margin-bottom: 19px;
+    margin-bottom: 30px;
   }
   .main_rank ul li span:first-of-type {
     width: 41px;
     font-size: 25px;
     top: 3px;
+  }
+  .main_rank .btnWa {
+    line-height: 66px;
+    padding-bottom: 15px;
   }
 }
 /*# sourceMappingURL=rank.css.map */
