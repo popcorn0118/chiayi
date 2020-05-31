@@ -1,15 +1,14 @@
-/** 限制手機橫式 **/
 function horizontal() {
     wdth=$(window).width();
     height=$(window).height();
-    console.log(height)
-    if (wdth < height) {
-        if(!$("body > div").hasClass("mask")) {
-            $("body").prepend("<div class='mask'>請將手機橫轉為橫屏</div>");
-        }
-    } else {
-        $(".mask").remove();
-    }
+    /** 限制手機橫式 **/
+    // if (wdth < height) {
+    //     if(!$("body > div").hasClass("mask")) {
+    //         $("body").prepend("<div class='mask'>請將手機橫轉為橫屏</div>");
+    //     }
+    // } else {
+    //     $(".mask").remove();
+    // }
     $('body').attr('style', `height:${height}px`);
 }
 

@@ -126,7 +126,7 @@
             },
 
             _getCSS: function(position) {
-                var mobile = ($(window).width() < 960)
+                var mobile = ($(window).width() < 979)
                 switch (position) {
                     case 0:
                         return {
@@ -140,7 +140,7 @@
                             'width': mobile ? '100px' : '150px',
                             'left': mobile ? '30%' : '25%',
                             'z-index': '8',
-                            'opacity': '0.7'
+                            'opacity': '0.3'
                         };
                     case 2:
                         return {
@@ -154,7 +154,7 @@
                             'width': mobile ? '100px' : '150px',
                             'left': mobile ? '70%' : '75%',
                             'z-index': '8',
-                            'opacity': '0.7'
+                            'opacity': '0.3'
                         };
                     case 4:
                         return {

@@ -1,10 +1,19 @@
 body {
-    width: 100vw;
+    width: 99vw;
     height: 80%;
     display: block;
     float: left;
     position: relative;
     overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width:979px) {
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #c9c8c3;
+        background-image: url(../image/info_bg.jpg);
+    }
 }
 body, input, button {
     font-family: Microsoft JhengHei;
@@ -166,7 +175,7 @@ body, input, button {
         &:nth-of-type(12) {background: #F5AE25;}
     }
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:979px) {
     .btnWa {
         .button {
             font-size: 21px;

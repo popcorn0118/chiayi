@@ -1,6 +1,5 @@
 body {
-    background: url(../image/role_bg.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(../image/role_bg.jpg);
 }
 .main_role {
     width: 100%;
@@ -89,20 +88,46 @@ body {
         clear: both;
     }
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:979px) {
     .main_role {
         .title {
-            height: 20%;
+            // height: auto;
+            line-height: 50px;
+            height: auto;
+            padding: 70px 20px 0;
+        
         }
         .q3 {
-            right: 10px;
-            bottom: 10px;
             max-width: 130px;
+            position: relative;
+            top: -27px;
+            right: auto;
+            bottom: auto;
+            float: right;
         }
         .main_role-king {
-            height: 55%;
+            height: auto;
+            margin-bottom: 20vh;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
             &.del {
+                margin-bottom: 5px;
+                height: auto;
+                position: relative;
+                top: 0;
+                transform: translateY(0);
+                .king-left {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    .img img {
+                        left: 0;
+                        top: 0;
+                        transform: translate(0%, 0%);
+                    }
+                }
                 .king-right {
+                    width: 100%;
                     .king-right--warp {
                         width: 90%;
                         .del_btn {
@@ -120,11 +145,19 @@ body {
                         line-height: 21px;
                     }
                 }
+                + .btnWa {
+                    margin-top: 15px;
+                    height: 15%;
+                    position: unset;
+                    transform: translateX(0);
+                }
             }
-        }
-        .btnWa {
-            margin-top: 15px;
-            height: 15%;
+            + .btnWa {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 }
