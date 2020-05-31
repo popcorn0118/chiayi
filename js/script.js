@@ -69,18 +69,3 @@ $(document).ready(function(){
          }
     });
 });
-
-
-/**水果輪播(role)**/
-// http://www.htmleaf.com/jQuery/Slideshow-Scroller/201507222275.html
-if (location.pathname.indexOf('role.html') > 0) {
-    $(function(){
-        $('#vitrine').vitrine({
-            title:'',
-            color:'#fff',
-            loop: true,
-            narrow: false, //遞補
-            speed: 400 //秒數
-        });
-    });
-}
