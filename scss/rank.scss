@@ -1,5 +1,6 @@
 body {
-    background-image: url(../image/info_bg.jpg);
+    background: url(../image/info_bg.jpg) no-repeat center center;
+    background-size: cover;
 }
 .main_rank {
     // width: 900px;
@@ -45,7 +46,6 @@ body {
         height: 60%;
         display: block;
         font-weight: bolder;
-        overflow: hidden;
         li {
             height: calc(100% / 5 - 10px);
             font-size: 30px;
@@ -110,39 +110,28 @@ body {
         }
     }
 }
-@media screen and (max-width:979px) {
+@media screen and (max-width:960px) {
     .main_rank {
-        height: auto;
-        min-height: 95%;
-        top: 0;
-        left: 0;
-        transform: translate(0%, 0%);
-        margin: 5%;
-        .title {
-            padding: 30px 10px;
-            span {
-                top: 0;
-                transform: translateY(0%);
-            }
-        }
         .q1 {
             width: 100px;
             height: 100px;
             left: 0;
-            top: 50px;
+            top: 0;
         }
         ul {
             line-height: 2em;
             font-size: 20px;
-            height: auto;
+            height: 47%;
             margin-bottom: 16px;
-            padding: 60px 0 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 10px 0 20px;
             li {
                 height: auto;
                 font-size: 20px;
                 margin-bottom: 19px;
                 &:nth-of-type(-n+3) {
-                    margin-bottom: 30px;
+                    margin-bottom: 19px;
                 }
                 span {
                     &:first-of-type {
@@ -152,10 +141,6 @@ body {
                     }
                 }
             }
-        }
-        .btnWa {
-            line-height: 66px;
-            padding-bottom: 15px;
         }
     }
 }

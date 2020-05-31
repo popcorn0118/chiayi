@@ -1,5 +1,6 @@
 body {
-    background-image: url(../image/category_bg.jpg);
+    background: url(../image/category_bg.jpg) no-repeat center center;
+    background-size: cover;
 }
 .main_category {
     height: 100%;
@@ -35,7 +36,7 @@ body {
             min-width: 150px;
             height: 150px;
             background: #ffffff;
-            border-radius: 100px;
+            border-radius: 100%;
             border: 10px solid #FFC107;
             z-index: 1;
             p {
@@ -141,7 +142,7 @@ body {
             }
             .btnWa {
                 position: absolute;
-                bottom: 25px;
+                bottom: -10px;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -331,25 +332,12 @@ body {
         }
     } 
 }
-@media screen and (max-width:979px) {
-    body {
-        background-repeat: repeat;
-    }
+@media screen and (max-width:960px) {
     .main_category {
-        float: left;
-        max-width: 90%;
-        height: auto;
-        min-height: 95%;
-        margin: 5%;
-        padding-bottom: 5%;
         .main_category-king {
-            height: auto;
-            max-width: 100%;
-            float: left;
+            height: 65%;
             .q {
-                width: 110px;
-                bottom: -45px;
-                left: -15px;
+                width: 60px;
             }
             .fraction {
                 top: -62px;
@@ -373,16 +361,11 @@ body {
             }
             .question_list {
                 ul {
-                    top: 0;
-                    left: 0;
                     padding: 0 0 2%;
-                    transform: translate(0%, 0%);
-                    width: 100%;
-                    padding: 5% 5% 80px;
                     li {
-                        width: 40%;
-                        padding-bottom: 40%;
-                        margin: 5%;
+                        width: 10%;
+                        padding-bottom: 10%;
+                        margin: 2% 5%;
                         p {
                             top: -18px;
                             span {
@@ -391,33 +374,26 @@ body {
                         }
                     }
                 }
-                .btnWa {
-                    bottom: 7px;
-                }
             }
         }
         &.del .main_category-king {
             .category_left {
-                width: 100%;
-                height: 350px;
-                padding: 30px 20px 10px;
+                width: 40%;
+                padding: 20px;
             }
             .category_right {
-                width: 100%;
+                width: 60%;
                 .topicTitle {
                     font-size: 18px;
                     line-height: 24px;
                 }
                 .btnWa {
-                    bottom: 0;
-                    margin: 0 10px 23px;
                     .button {
                         font-size: 16px;
                         width: 100%;
                         padding: 5px 10px;
                     }
                     &[class*="line_"] {
-                        margin: 40px auto 20px;
                         .button {
                             padding: 10px;
                         }  
