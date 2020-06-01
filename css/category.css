@@ -440,6 +440,9 @@ body {
   .main_category .main_category-king .question_list .btnWa {
     bottom: 7px;
   }
+  .main_category.del .main_category-king {
+    height: auto;
+  }
   .main_category.del .main_category-king .category_left {
     width: 100%;
     height: 350px;
