@@ -15,6 +15,9 @@ body {
         background-image: url(../image/info_bg.jpg);
     }
 }
+.clear {
+    clear: both;
+}
 body, input, button {
     font-family: Microsoft JhengHei;
     outline:none;

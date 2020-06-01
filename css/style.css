@@ -19,6 +19,10 @@ body {
   }
 }
 
+.clear {
+  clear: both;
+}
+
 body, input, button {
   font-family: Microsoft JhengHei;
   outline: none;

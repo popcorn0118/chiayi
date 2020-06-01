@@ -76,6 +76,9 @@ body {
     }
 }
 @media screen and (max-width:979px) {
+    body {
+        background-image: url(../image/bg_home-m.jpg);
+    }
     .main_home {
         width: 100%;
         height: 100%;

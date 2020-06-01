@@ -131,14 +131,14 @@
                     case 0:
                         return {
                             'width': mobile ? '50px' : '100px',
-                            'left': mobile ? '15%' : '10%',
+                            'left': mobile ? '7%' : '10%',
                             'z-index': '7',
                             'opacity': '0.3'
                         };
                     case 1:
                         return {
-                            'width': mobile ? '100px' : '150px',
-                            'left': mobile ? '30%' : '25%',
+                            'width': mobile ? '80px' : '150px',
+                            'left': mobile ? '25%' : '25%',
                             'z-index': '8',
                             'opacity': '0.3'
                         };
@@ -151,15 +151,15 @@
                         };
                     case 3:
                         return {
-                            'width': mobile ? '100px' : '150px',
-                            'left': mobile ? '70%' : '75%',
+                            'width': mobile ? '80px' : '150px',
+                            'left': mobile ? '75%' : '75%',
                             'z-index': '8',
                             'opacity': '0.3'
                         };
                     case 4:
                         return {
                             'width': mobile ? '50px' : '100px',
-                            'left': mobile ? '85%' : '90%',
+                            'left': mobile ? '93%' : '90%',
                             'z-index': '7',
                             'opacity': '0.3'
                         };
