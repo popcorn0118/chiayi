@@ -34,7 +34,8 @@ body {
   line-height: 3em;
   font-size: 40px;
   padding: 5%;
-  height: 72%;
+  height: 65%;
+  margin-bottom: 4%;
   display: block;
   font-weight: bolder;
   overflow-y: auto;

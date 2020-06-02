@@ -87,6 +87,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
+  margin-bottom: 30px;
 }
 
 .main_category .main_category-king .question_list ul li {
